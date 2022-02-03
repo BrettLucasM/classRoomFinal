@@ -5,7 +5,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 const app = express();
 app.set('view engine', 'ejs');
 fs = require('fs');
-app.use('/assets', express.static('assets')); //Calls stylesheet
+app.use('../assets', express.static('assets')); //Calls stylesheet
 
 app.get('/', function (req, res) {
 
