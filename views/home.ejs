@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>ClassRoom</title><!--Title of each individual page-->
+    <link rel='stylesheet' type="text/css" href='../assets/Stylesheet/style.css' />
+</head>
+
+<body>
+<main>
+    <% if (data.v === 0){%>
+       
+        <div class="body2" style="background-image: url('../assets/images/black.jpg')">
+        <div>
+            <ul>
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="/create">Create Room</a></li>
+                <li><a href="#">Update Room</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="/Help">Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <img class="CoverPic6" src="../assets/images/Sign.jpg" alt="UNCC Sign">
+        </div>
+    <h1 class="title">ClassRoom</h1>
+</div>
+
+        <% } if (data.v === 2){%>
+            
+            <div class="body2" style="background-image: url('../assets/images/black.jpg')">
+            <div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/create">Create Room</a></li>
+                    <li><a href="#">Update Room</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a class="active" href="/Help">Help</a></li>
+                </ul>
+            </div>
+            <div>
+                <img class="CoverPic3" src="../assets/images/Support.png" alt="HELP">
+            </div>
+            <h1 class="title">Help Page</h1>
+            <div class="center2">
+        
+            <table class="tables">
+                <tr>
+                    <th><h3 class="titles">Email:</h3></th>
+                    <th><h3 class="titles">Phone:</h3></th>
+                    <th><h3 class="titles">User Manual:</h3></th>
+                    <th class="vertical-line"></th>
+                    <th class="titles" rowspan="2">
+                        <h3 class="centerMe">Need Help?</h3>
+                    <br>
+                    Feel free to contact us via Email or telephone or take a look at our User Manual.
+                    We look forward to helping you and thank you for using ClassRoom!<br>
+                    <hr>
+                    <table class="centerMe">
+                        <tr>
+                            <th>
+                                <a href="#">Create Room?</a>
+                            </th>
+                            <th>
+                                <a href="#">Update Existing Room?</a>
+                            </th>
+                        </tr>    
+                    </table>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="mailto:brettlucas404@gmail.com">Help@aol.com</a>
+                    </td>
+                    <td>
+                        <a href="tel:+7046827526">Call Us</a>
+                    </td>
+                    <td>
+                        <a href="../assets/Documents/User_Manual_2021.pdf">User Manual</a>
+                    </td>
+                    <td class="vertical-line"></td>
+                    
+                </tr>
+            </table>
+        
+    </div>
+        </div>
+    
+     <%} if(data.v === 1) {%>
+        
+        
+            <div class="about">
+         <div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/create">Create Room</a></li>
+                <li><a href="#">Update Room</a></li>
+                <li><a class="active" href="/About">About</a></li>
+                <li><a href="/Help">Help</a></li>
+            </ul>
+            <table class="center">
+                <tr>
+                    <th>
+                        <img class="CoverPic2" src="../assets/images/Tower.jpg" alt="UNCC Tower" >
+                    </th>
+                    <th>
+                        <img class="CoverPic2" src="../assets/images/TedXUNCC.jpg" alt="UNCC Tower" >
+                    </th>
+                    <th>
+                        <img class="CoverPic2" src="../assets/images/Sign.jpg" alt="UNCC Tower" >
+                    </th>
+                </tr>
+            </table>
+    
+        </div>
+        
+        </div>
+        
+        
+    
+    
+    <%}%>
+</main>
+</body>
+
+</html>

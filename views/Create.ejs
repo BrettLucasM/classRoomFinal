@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>ClassRoom</title><!--Title of each individual page-->
+    <link rel='stylesheet' type="text/css" href='../assets/Stylesheet/style.css' />
+</head>
+
+<body>
+<main>
+
+    <div class="body2" style="background-image: url('../assets/images/black.jpg')">
+        <div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a class="active" href="/create">Create Room</a></li>
+                <li><a href="#">Update Room</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="/Help">Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <img class="CoverPic6" src="../assets/images/Capture.PNG" alt="Numbers">
+        </div>
+
+        <form action="/creation" method="POST">
+            <label for="room">Room Number:<b></b></label>
+            <input type="text" name="room" placeholder="ATK 123">
+            <button type="submit">Login</button>
+        </form>
+        
+        <% if (data.i === 2){%>
+            <p style="color: aliceblue;">You said: <%=data.Answer.room%></p>
+            <%}%>
+            
+</div>
+
+
+
+
+    </main>
+    </body>
+    </html>
